@@ -1,0 +1,20 @@
+frutas=['MAÇA', 'banana', 'cerela', 'abacate', 'morango', 'melão']
+print(frutas)
+print(f'A primeira futa é: {frutas[0]}')
+print(f'A ultima futa é: {frutas[-1]}')
+
+frutas[1:3]= 'caju', 'jaca'
+print(f'--------------------- {frutas}-------------')
+
+frutas[1]= 'umbu'
+frutas.append('caja') # salva no final da lista
+print(f'--------------------- {frutas}-------------')
+
+frutas.insert (5,'tamara') # insere
+print(f'--------------------- {frutas}-------------')
+
+frutas.remove('abacate') # remove da lista
+print(f'--------------------- {frutas}-------------')
+
+del frutas[-1] # deleta o ultimo da lista
+print(f'--------------------- {frutas}-------------')
