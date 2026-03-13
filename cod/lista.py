@@ -3,7 +3,7 @@ print(frutas)
 print(f'A primeira futa é: {frutas[0]}')
 print(f'A ultima futa é: {frutas[-1]}')
 
-frutas[1:3]= 'caju', 'jaca'
+frutas[1:3]= 'caju', 'jaca' # substitue na lista, idice 1 e 2
 print(f'--------------------- {frutas}-------------')
 
 frutas[1]= 'umbu'
