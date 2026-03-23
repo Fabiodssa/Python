@@ -18,3 +18,7 @@ print(f'--------------------- {frutas}-------------')
 
 del frutas[-1] # deleta o ultimo da lista
 print(f'--------------------- {frutas}-------------')
+
+lista=[10,20,30,40]
+lista.append(50)
+print(lista)
