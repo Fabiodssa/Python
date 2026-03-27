@@ -26,3 +26,19 @@ print(lista)
 lista.pop() #remove do final da lista
 lista.append(60)
 print(lista)
+
+listab=lista.copy() #copia a lista
+print('copia', listab)
+print('----------------------------------------------')
+
+indices=range(len(frutas)) #mostras o indice de cada elemento da lista
+for indice in indices:
+    print(indice, frutas[indice])
+print('----------------------------------------------')
+
+nome1, nome2, nome3=['fabio', 'pedro', 'kreby'] #cria uma variavel para cada valor da lista
+print(nome2)
+print('----------------------------------------------')
+
+nome1, nome2, nome3, *resto=['fabio', 'pedro', 'kreby', 'carra', 'falipe', 'lucas']
+print(nome3, resto) #cria uma varavel para as que não tem uma expecifica
