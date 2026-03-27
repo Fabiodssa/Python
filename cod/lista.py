@@ -31,9 +31,35 @@ listab=lista.copy() #copia a lista
 print('copia', listab)
 print('----------------------------------------------')
 
+##################################################################################
+
 indices=range(len(frutas)) #mostras o indice de cada elemento da lista
 for indice in indices:
     print(indice, frutas[indice])
+
+print('----------------------------------------------')
+#lista_enumerada=enumerate(frutas)    #outra foma de enumerar usando enumerate
+for item in enumerate(frutas):
+    print(item)
+
+print('----------------------------------------------')
+
+lista_enumerada=enumerate(frutas)       #outra foma de enumerar
+print(list(lista_enumerada))
+
+print('----------------------------------------------')
+
+for item2 in enumerate(frutas):
+    numero,nome=item2
+    print(numero, nome)
+
+print('----------------------------------------------')
+
+for numero, nome in enumerate(frutas):
+    print('lista bolada',numero, nome)
+
+############################################################################################
+
 print('----------------------------------------------')
 
 nome1, nome2, nome3=['fabio', 'pedro', 'kreby'] #cria uma variavel para cada valor da lista
