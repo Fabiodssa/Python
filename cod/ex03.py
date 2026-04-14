@@ -25,3 +25,26 @@ def multiAll(*args):
 
 resu = multiAll(10, 20, 100)
 print(resu)
+
+print("----------------------------------------------------")
+
+def saudacao(msg):
+    sau="seja bemvindo"
+    return msg + sau
+
+print(saudacao('olá mundo!'))
+
+
+print("----------------------------------------------------")
+
+def criar_saudacao(saudacao):
+    def saudar(nome):
+        return f'{saudacao}, {nome} !'
+    return saudar
+
+falar_bom_dia = criar_saudacao('Bom dia')
+falar_boa_noite = criar_saudacao('Boa noite')
+
+for nome in ['Maria', 'Joana', 'Luiz' ]:
+    print(falar_bom_dia(nome))
+    print(falar_boa_noite(nome))
